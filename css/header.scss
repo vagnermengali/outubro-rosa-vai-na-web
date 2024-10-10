@@ -10,6 +10,12 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+
+    @media (max-width: 990px) {
+      flex-direction: column;
+      gap: 12px;
+      padding: 10px 16px;
+    }
   }
 
   .header__logo-section {
@@ -28,6 +34,15 @@
       .header__logo {
         width: 100px;
         height: 100px;
+
+        @media (max-width: 990px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      @media (max-width: 990px) {
+        font: normal 400 18px/28px "Noto Sans", sans-serif;
       }
     }
   }
@@ -38,6 +53,10 @@
       align-items: center;
       justify-content: flex-end;
       gap: 80px;
+
+      @media (max-width: 990px) {
+        gap: 16px;
+      }
 
       .header__nav-item {
         position: relative;
@@ -52,6 +71,10 @@
           transition: all 0.3s ease-in-out;
           bottom: -2px;
           border-radius: 6px;
+
+          @media (max-width: 990px) {
+            height: 2px;
+          }
         }
 
         &:hover {
@@ -68,6 +91,10 @@
           font: normal 400 28px/38px "Noto Sans", sans-serif;
           text-transform: uppercase;
           transition: all 0.3s ease-in-out;
+
+          @media (max-width: 990px) {
+            font: normal 400 18px/28px "Noto Sans", sans-serif;
+          }
         }
       }
     }
