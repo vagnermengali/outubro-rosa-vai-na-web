@@ -1,0 +1,75 @@
+@import "root";
+
+.header {
+  background: $color-bg-secondary;
+
+  .header__container {
+    padding: 10px 32px;
+    max-width: 1216px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .header__logo-section {
+    .header__campaign-link {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font: normal 400 28px/38px "Noto Sans", sans-serif;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $color-text-extra-light;
+      }
+
+      .header__logo {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .header__nav {
+    .header__nav-list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 80px;
+
+      .header__nav-item {
+        position: relative;
+        transition: all 0.3s ease-in-out;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 4px;
+          background: $color-text-light;
+          transition: all 0.3s ease-in-out;
+          bottom: -2px;
+          border-radius: 6px;
+        }
+
+        &:hover {
+          .header__nav-link {
+            color: $color-text-extra-light;
+          }
+          &::before {
+            width: 100%;
+            background: $color-text-extra-light;
+          }
+        }
+
+        .header__nav-link {
+          font: normal 400 28px/38px "Noto Sans", sans-serif;
+          text-transform: uppercase;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}

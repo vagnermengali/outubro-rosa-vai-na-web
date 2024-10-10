@@ -1,0 +1,100 @@
+.main {
+  .main__section {
+    &:nth-child(0n + 1) {
+      .main__content {
+        padding: 11px 55px;
+        max-width: 1216px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 86px;
+
+        .main__text {
+          font: normal 400 24px/32px "Noto Sans", sans-serif;
+          color: $color-text-dark;
+          max-width: 587px;
+        }
+
+        .main__container-image {
+          overflow: hidden;
+
+          .main__image {
+            width: 365px;
+            height: 355px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(0n + 2) {
+      background-color: $color-bg-secondary;
+
+      .main__content {
+        padding: 14px 55px;
+        max-width: 1216px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 58px;
+
+        .main__text {
+          font: normal 400 24px/32px "Noto Sans", sans-serif;
+          max-width: 648px;
+        }
+
+        .main__container-image {
+          overflow: hidden;
+
+          .main__image {
+            width: 421px;
+            height: 234px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(0n + 3) {
+      .main__content {
+        padding: 85px 55px;
+        max-width: 1216px;
+        margin: 0 auto;
+
+        .main__icons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 27px;
+
+          .main__icon-item {
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+
+            .main__container-image {
+              overflow: hidden;
+
+              .main__icon-image {
+                width: 250px;
+                height: 250px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

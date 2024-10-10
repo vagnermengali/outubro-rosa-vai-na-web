@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.header {
+  background: #ff69b4;
+}
+.header .header__container {
+  padding: 10px 32px;
+  max-width: 1216px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.header .header__logo-section .header__campaign-link {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font: normal 400 28px/38px "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.header .header__logo-section .header__campaign-link:hover {
+  color: #ffffff;
+}
+.header .header__logo-section .header__campaign-link .header__logo {
+  width: 100px;
+  height: 100px;
+}
+.header .header__nav .header__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 80px;
+}
+.header .header__nav .header__nav-list .header__nav-item {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.header .header__nav .header__nav-list .header__nav-item::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 4px;
+  background: #e4eef1;
+  transition: all 0.3s ease-in-out;
+  bottom: -2px;
+  border-radius: 6px;
+}
+.header .header__nav .header__nav-list .header__nav-item:hover .header__nav-link {
+  color: #ffffff;
+}
+.header .header__nav .header__nav-list .header__nav-item:hover::before {
+  width: 100%;
+  background: #ffffff;
+}
+.header .header__nav .header__nav-list .header__nav-item .header__nav-link {
+  font: normal 400 28px/38px "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.main .main__section:nth-child(0n+1) .main__content {
+  padding: 11px 55px;
+  max-width: 1216px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 86px;
+}
+.main .main__section:nth-child(0n+1) .main__content .main__text {
+  font: normal 400 24px/32px "Noto Sans", sans-serif;
+  color: #000000;
+  max-width: 587px;
+}
+.main .main__section:nth-child(0n+1) .main__content .main__container-image {
+  overflow: hidden;
+}
+.main .main__section:nth-child(0n+1) .main__content .main__container-image .main__image {
+  width: 365px;
+  height: 355px;
+  transition: all 0.3s ease-in-out;
+}
+.main .main__section:nth-child(0n+1) .main__content .main__container-image .main__image:hover {
+  transform: scale(1.1);
+}
+.main .main__section:nth-child(0n+2) {
+  background-color: #ff69b4;
+}
+.main .main__section:nth-child(0n+2) .main__content {
+  padding: 14px 55px;
+  max-width: 1216px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 58px;
+}
+.main .main__section:nth-child(0n+2) .main__content .main__text {
+  font: normal 400 24px/32px "Noto Sans", sans-serif;
+  max-width: 648px;
+}
+.main .main__section:nth-child(0n+2) .main__content .main__container-image {
+  overflow: hidden;
+}
+.main .main__section:nth-child(0n+2) .main__content .main__container-image .main__image {
+  width: 421px;
+  height: 234px;
+  transition: all 0.3s ease-in-out;
+}
+.main .main__section:nth-child(0n+2) .main__content .main__container-image .main__image:hover {
+  transform: scale(1.1);
+}
+.main .main__section:nth-child(0n+3) .main__content {
+  padding: 85px 55px;
+  max-width: 1216px;
+  margin: 0 auto;
+}
+.main .main__section:nth-child(0n+3) .main__content .main__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 27px;
+}
+.main .main__section:nth-child(0n+3) .main__content .main__icons .main__icon-item {
+  transition: all 0.3s ease-in-out;
+}
+.main .main__section:nth-child(0n+3) .main__content .main__icons .main__icon-item:hover {
+  transform: scale(1.1);
+}
+.main .main__section:nth-child(0n+3) .main__content .main__icons .main__icon-item .main__container-image {
+  overflow: hidden;
+}
+.main .main__section:nth-child(0n+3) .main__content .main__icons .main__icon-item .main__container-image .main__icon-image {
+  width: 250px;
+  height: 250px;
+}
+
+.footer {
+  background: #ff69b4;
+}
+.footer .footer__container {
+  position: relative;
+  max-width: 1216px;
+  padding: 10px 32px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 72px;
+}
+.footer .footer__container .footer__social-icons .footer__social-list {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+.footer .footer__container .footer__social-icons .footer__social-list .footer__social-icon {
+  width: 58px;
+}
+.footer .footer__container .footer__credits {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font: normal 400 20px/27px "Noto Sans", sans-serif;
+  white-space: nowrap;
+}
+.footer .footer__container .footer__logo {
+  width: 59px;
+  height: 109px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #ffd9ec;
+  color: #e4eef1;
+}
+
+/*# sourceMappingURL=global.css.map */
